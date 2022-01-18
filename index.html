@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Quiz Time - выбирите Quiz</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="/">
+                <img class="header__logo" src="img/logo.svg" alt="Логотип quiz time в виде элемента пазла"  />
+            </a>
+            <h1 class="header__title">Quiz Time</h1>
+        </div>
+    </header>
+    <main class="main">
+        <h2 class="main__title">Выбирите Quiz</h2>
+        <div class="main__box selection">
+            <ul class="selection__list">
+                <li class="selection__item">
+                    <button class="selection__theme">Финансовая грамотность</button>
+                </li>
+                <li class="selection__item">
+                    <button class="selection__theme">Фронтенд разработка</button>
+                    <p class="selection__result">
+                        <span class="selection__result-ratio">7/10</span>
+                        <span class="selection__result-text">Последний результат</span>
+                    </p>
+                </li>
+                <li class="selection__item">
+                    <button class="selection__theme">Бэкенд разработка</button>
+                </li>
+                <li class="selection__item">
+                    <button class="selection__theme">Личные инвестиции</button>
+                </li>
+                <li class="selection__item">
+                    <button class="selection__theme">Нутрициология</button>
+                </li>
+                <li class="selection__item">
+                    <button class="selection__theme">Свободная тема</button>
+                </li>
+                <li class="selection__item">
+                    <button class="selection__theme">Свободная тема</button>
+                </li>
+                <li class="selection__item">
+                    <button class="selection__theme">Свободная тема</button>
+                </li>
+                <li class="selection__item">
+                    <button class="selection__theme">Свободная тема</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main__box main__box-question">
+            <form class="main__form-question" data-count="1/10">
+                <fieldset>
+                    <legend class="main__subtitle">Какие типы input корректны?</legend>
+                    <label class="label answer">
+                        <input class="answer__checkbox" name="answer" type="checkbox" >text
+                    </label>
+                    <label class="label answer">
+                        <input class="answer__checkbox" name="answer" type="checkbox">color
+                    </label>
+                    <label class="label answer">
+                        <input class="answer__checkbox" name="answer" type="checkbox">week
+                    </label>
+                    <label class="label answer">
+                        <input class="answer__checkbox" name="answer" type="checkbox">day
+                    </label>
+                </fieldset>
+
+                <button class="main__button question__next">Подтвердить</button>
+            </form>
+        </div>
+
+        <div class="main__box main__box-question">
+            <form class="main__form-question" data-count="2/10">
+                <fieldset>
+                    <legend class="main__subtitle">Какая столица является родиной демократии?</legend>
+                    <label class="label answer">
+                        <input class="answer__radio" name="answer" type="radio">Рим
+                    </label>
+                    <label class="label answer">
+                        <input class="answer__radio" name="answer" type="radio">Амстердам
+                    </label>
+                    <label class="label answer">
+                        <input class="answer__radio" name="answer" type="radio">Афины
+                    </label>
+                    <label class="label answer">
+                        <input class="answer__radio" name="answer" type="radio">Вашингтон
+                    </label>
+                </fieldset>
+
+                <button class="main__button question__next">Подтвердить</button>
+            </form>
+        </div>
+
+        <div class="main__box main__box-result result">
+            <h2 class="main__subtitle main__subtitle-result">Ваш результат:</h2>
+            <div class="result__box">
+                <p class="result__ratio">10/10</p>
+                <p class="result__text">Отличный результат</p>
+            </div>
+            <button class="main__button result__return">К списку квизов</button>
+        </div>
+    </main>
+</body>
+</html>
